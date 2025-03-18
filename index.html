@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maticc</title>
+    <link rel="icon" type="image/png" href="icoon.png"> 
+    <style>
+         /* Orange Text with Black Border & Dark Theme */
+        body {
+            background-image: url('port.jpg');
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #121212, #1C1C1C, #292929);
+            color: #E0E0E0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background: #1A1A1A;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #1A1A1A;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #FF6600;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background: #333;
+            color: white;
+        }
+
+        /* Orange Text with Black Border */
+        h1, h2, p {
+            color: #FF6600;
+            text-transform: uppercase;
+            text-shadow: 
+                -2px -2px 0 #000,  
+                 2px -2px 0 #000,  
+                -2px  2px 0 #000,  
+                 2px  2px 0 #000;
+        }
+
+        .video-container, .map-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-map {
+            width: 80%;
+            max-width: 600px;
+            border: 4px solid #444;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .image-map:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(255, 102, 0, 0.5);
+        }
+
+        .button {
+            background: #222;
+            color: #FF6600;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 2px solid #FF6600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        .button:hover {
+            background: #333;
+            transform: scale(1.1);
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #CCCCCC;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-image: url('bgej.jpg'); 
+            background-size: initial; 
+            background-position: center; 
+            background-repeat: inherit; 
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+
+
+
+
+        .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: #1A1A1A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 102, 0, 0.3);
+    margin: auto;
+    width: 50%;
+}
+.container {
+    background-color: orangered;
+}
+
+.profile {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #FF6600;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile h3 {
+    color: #FF6600;
+    margin-top: 10px;
+}
+
+.profile p {
+    color: #E0E0E0;
+    margin: 5px 0;
+}
+
+.contact-container {
+    background-image: url('probg.webp');
+    background-size: initial; 
+            background-position: center; 
+            background-repeat: inherit; 
+
+}
+
+nav{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 102, 0, 0.3);
+    text-align: center;
+    margin: 20px auto;
+    width: 40%;}
+    .container {
+    width: 60%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the table inside */
+    margin: 20px auto; /* Centers the whole container on the page */
+}
+
+table {
+    width: 80%; /* Adjust width for better spacing */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+th {
+    background-color: #e0e0e0;
+}
+.more-info-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.more-info-btn:hover {
+    background-color: darkorange;
+}
+    
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    transition: 0.3s;
+}
+
+#backToTopBtn:hover {
+    background-color: black;
+    color: orange;
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: #e68900;
+}
+body {
+    background-image: url('port.jpg');
+    background-position: initial;
+}
+th, td{
+    color: #000;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🚗 EJ &amp; VINZ CAR HAUS 🚗</h1>
+        <p>Your trusted marketplace for buying and selling cars.</p>
+    </header>
+    <nav id="nav">
+        <a href="file:///C:/Users/JOVEL-SECAREZ/Desktop/My%20Portfolio/My%20Portfolio.html">Home</a>
+        <a href="#about">About Us </a>
+        <a href="#location">Location Map</a>
+        <a href="#contact">Contact Us </a>
+    </nav>
+    <main>
+
+         <section id="about">
+
+            <h2>About Us</h2>
+            <p>We provide the best deals on cars, ensuring quality and reliability.</p>
+            <p>At Venjohncardealermatic, we specialize in quality auto sales with a focus on honesty,<br><br> great deals, and customer satisfaction. Whether you're searching for a dependable daily driver, a spacious family SUV,<br><br> or a sleek luxury car, we have the perfect vehicle for you. With a hassle-free buying experience and flexible financing options,<br><br> we make car ownership easy and stress-free. Drive away in your dream car today—visit us at 📍INAYAWAN CEBU, CITY! 🚗💨 😊</p><p></p>
+        
+
+        </section>
+
+        <section>
+            <h2>BASIN GANAHAN KA MO-CODE</h2>
+            <p>Check out HTML tutorial.</p>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VmiMcxLVVto" frameborder="0" allowfullscreen="">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Find Us</h2>
+            <p>Visit our showroom or browse online.</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15712.706879535418!2d123.8860169!3d10.2944329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College!5e0!3m2!1sen!2sph!4v1710756870293" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>Car Image Map</h2>
+            <p>Click on the parts of the car to explore details.</p>
+            <a href="https://www.motorist.ph/article/3175/lamborghini-pays-tribute-to-its-naturally-aspirated-v10-engine-with-the-huracan-stj-limited-edition" target="_blank" title="clickhere"><img src="SAKYANAN1.jpeg" width="500px" height="200px"></a>
+
+            <h2>Car Image Map</h2>
+            <p>Click on the parts of the car to explore details.</p>
+            <a href="https://www.supercars.net/blog/all-brands/bugatti/current-bugatti-models/" target="_blank" title="clickhere"><img src="SAKYANAN2.png" width="500px" height="200px"></a>
+            
+        </section>
+        <div class="container">
+            <h2>Emoji Unicode Table</h2>
+            <table>
+
+                <tr>
+                    <th>Emoji</th>
+                    <th>Unicode</th>
+                </tr>
+                <tr>
+                    <td>&#x1F600;</td>
+                    <td>U+1F600</td>
+                </tr>
+                <tr>
+                    <td>&#x1F602;</td>
+                    <td>U+1F602</td>
+                </tr>
+                <tr>
+                    <td>&#x2764;</td>
+                    <td>U+2764</td>
+                </tr>
+                <tr>
+                    <td>&#x1F697;</td>
+                    <td>U+1F697</td>
+                </tr>
+                <tr>
+                    <td>&#x1F389;</td>
+                    <td>U+1F389</td>
+                </tr>
+                <tr>
+                    <td>&#x1F30D;</td>
+                    <td>U+1F30D</td>
+                </tr>
+            </table>
+        </div>
+                
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+    
+                <div class="contact-container">
+                    <div class="profile">
+                        <img src="pic1.png" alt="EJ's Profile">
+                        <h3>EJ</h3>
+                        <p>20 Years Old</p>
+                        <p>effjohnquia-ot@gmail.com</p>
+                        <p>Car Expertise</p>
+                        <a href="file:///C:/Users/JOVEL-SECAREZ/Desktop/sudtanan/soloport.html" class="more-info-btn">More Info</a>
+                    </div>
+    
+                    <div class="profile">
+                        <img src="picnako.png" alt="Vinz's Profile">
+                        <h3>Vinz</h3>
+                        <p>18 Years Old</p>
+                        <p>enolpev@gmail.com</p>
+                        <p>Car Expertise</p>
+                        <a href="file:///C:/Users/JOVEL-SECAREZ/Desktop/sudtanan/solo.html" class="more-info-btn">More Info</a>
+                        
+                     </div>
+                </div>
+            </section>
+            <button onclick="scrollToTop()" id="backToTopBtn">↑ Back to Top</button>
+        <script>window.onscroll = function() {
+                var btn = document.getElementById("backToTopBtn");
+                if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+                }
+                };
+                
+                
+                function scrollToTop() {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+        </script>
+        
+    </main>
+    <footer>
+        <p>© 2025 Car Selling And Service | Contact us: EJVINZ@gmail.com📞</p>
+    </footer>
+    
+</body>
+</html>
